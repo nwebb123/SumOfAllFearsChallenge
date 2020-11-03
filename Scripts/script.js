@@ -7,11 +7,11 @@
     let trueOrFalseResult = false;      //boolean value, equates to true or false
     
 
-    for (let i = 0; i < givenArray.length; i++) {
-        for (let y = (i + 1); y < givenArray.length - 1; y++) {     //Nested loop; since we added 1 to the index, we have to subtract 1 from the length
+    for (let i = 0; i < givenArray.length - 1; i++) {
+        for (let y = (i + 1); y < givenArray.length; y++) {     //Nested loop; since we added 1 to the index, we have to subtract 1 from the length
             if (K == givenArray[i] + givenArray[y]) {   //If K(17) is the same value as index i + index y, found=true
                 trueOrFalseResult = true;   
-                return trueOrFalse;
+                //return trueOrFalse;
             }
         }
     }
